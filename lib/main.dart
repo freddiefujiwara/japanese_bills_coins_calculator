@@ -93,20 +93,24 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("500円"),
-                                    textColor: Colors.white,
-                                    color: Colors.grey,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 50.0,
+                                    height: 50.0,
+                                    child: RaisedButton(
+                                      child: Text("500円"),
+                                      textColor: Colors.white,
+                                      color: Colors.grey,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment500();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment500();
-                                    },
                                   ),
                                   Text("${model.get500()} 枚"),
                                 ],
@@ -115,20 +119,24 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("100円"),
-                                    color: Colors.grey,
-                                    textColor: Colors.white,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 40.0,
+                                    height: 40.0,
+                                    child: RaisedButton(
+                                      child: Text("100円"),
+                                      color: Colors.grey,
+                                      textColor: Colors.white,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment100();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment100();
-                                    },
                                   ),
                                   Text("${model.get100()} 枚"),
                                 ],
@@ -137,20 +145,24 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("50円"),
-                                    color: Colors.grey,
-                                    textColor: Colors.white,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 35.0,
+                                    height: 35.0,
+                                    child: RaisedButton(
+                                      child: Text("50円"),
+                                      color: Colors.grey,
+                                      textColor: Colors.white,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment50();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment50();
-                                    },
                                   ),
                                   Text("${model.get50()} 枚"),
                                 ],
@@ -159,19 +171,23 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("10円"),
-                                    color: Colors.orange,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 35.0,
+                                    height: 35.0,
+                                    child: RaisedButton(
+                                      child: Text("10円"),
+                                      color: Colors.orange,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment10();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment10();
-                                    },
                                   ),
                                   Text("${model.get10()} 枚"),
                                 ],
@@ -180,19 +196,23 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("5円"),
-                                    color: Colors.yellow,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 30.0,
+                                    height: 30.0,
+                                    child: RaisedButton(
+                                      child: Text("5円"),
+                                      color: Colors.yellow,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment5();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment5();
-                                    },
                                   ),
                                   Text("${model.get5()} 枚"),
                                 ],
@@ -201,19 +221,23 @@ class Calculator extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  RaisedButton(
-                                    child: Text("1円"),
-                                    color: Colors.white70,
-                                    shape: CircleBorder(
-                                      side: BorderSide(
-                                        color: Colors.black,
-                                        width: 1.0,
-                                        style: BorderStyle.solid,
+                                  ButtonTheme(
+                                    minWidth: 30.0,
+                                    height: 30.0,
+                                    child: RaisedButton(
+                                      child: Text("1円"),
+                                      color: Colors.white70,
+                                      shape: CircleBorder(
+                                        side: BorderSide(
+                                          color: Colors.black,
+                                          width: 1.0,
+                                          style: BorderStyle.solid,
+                                        ),
                                       ),
+                                      onPressed: () {
+                                        model.increment1();
+                                      },
                                     ),
-                                    onPressed: () {
-                                      model.increment1();
-                                    },
                                   ),
                                   Text("${model.get1()} 枚"),
                                 ],
