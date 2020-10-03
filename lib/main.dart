@@ -40,7 +40,7 @@ class Calculator extends StatelessWidget {
                                 "合計${formatter.format(model.sum())} 円",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 40,
+                                  fontSize: 35,
                                   color: Theme.of(context).primaryColor,
                                 ),
                               ),
