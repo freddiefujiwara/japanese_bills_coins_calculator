@@ -40,11 +40,11 @@ class Calculator extends StatelessWidget {
                                 "合計${formatter.format(model.sum())} 円",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 30,
+                                  fontSize: 25,
                                   color: Theme.of(context).primaryColor,
                                 ),
                               ),
-                              SizedBox(height: 10),
+                              SizedBox(height: 15),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
