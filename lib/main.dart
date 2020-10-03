@@ -97,7 +97,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 50.0,
                                     height: 50.0,
                                     child: RaisedButton(
-                                      child: Text("500円"),
+                                      child: Text("500"),
                                       textColor: Colors.white,
                                       color: Colors.grey,
                                       shape: CircleBorder(
@@ -123,7 +123,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 40.0,
                                     height: 40.0,
                                     child: RaisedButton(
-                                      child: Text("100円"),
+                                      child: Text("100"),
                                       color: Colors.grey,
                                       textColor: Colors.white,
                                       shape: CircleBorder(
@@ -149,7 +149,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 35.0,
                                     height: 35.0,
                                     child: RaisedButton(
-                                      child: Text("50円"),
+                                      child: Text("50"),
                                       color: Colors.grey,
                                       textColor: Colors.white,
                                       shape: CircleBorder(
@@ -175,7 +175,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 35.0,
                                     height: 35.0,
                                     child: RaisedButton(
-                                      child: Text("10円"),
+                                      child: Text("10"),
                                       color: Colors.orange,
                                       shape: CircleBorder(
                                         side: BorderSide(
@@ -200,7 +200,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 30.0,
                                     height: 30.0,
                                     child: RaisedButton(
-                                      child: Text("5円"),
+                                      child: Text("5"),
                                       color: Colors.yellow,
                                       shape: CircleBorder(
                                         side: BorderSide(
@@ -225,7 +225,7 @@ class Calculator extends StatelessWidget {
                                     minWidth: 30.0,
                                     height: 30.0,
                                     child: RaisedButton(
-                                      child: Text("1円"),
+                                      child: Text("1"),
                                       color: Colors.white70,
                                       shape: CircleBorder(
                                         side: BorderSide(
