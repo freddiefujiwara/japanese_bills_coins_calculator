@@ -7,13 +7,13 @@ const RESOURCES = {
 "manifest.json": "6b59c1791214c4090a73e6c74eab348f",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "73ce854d960a06c80e38a271cd26446d",
-"/": "73ce854d960a06c80e38a271cd26446d",
-"main.dart.js": "9ca170163b0cdc1b233ad617b7f68f42",
+"index.html": "05541e9358268f8a93dd2a24b2f3a69b",
+"/": "05541e9358268f8a93dd2a24b2f3a69b",
+"main.dart.js": "d07d00c1b0eadd9e62603f637490c9d0",
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/NOTICES": "cfb1547738fa0896af4decc3031d2f79",
-"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d"
 };
 
