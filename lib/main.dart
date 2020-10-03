@@ -44,6 +44,7 @@ class Calculator extends StatelessWidget {
                                   color: Theme.of(context).primaryColor,
                                 ),
                               ),
+                              SizedBox(height: 10),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
