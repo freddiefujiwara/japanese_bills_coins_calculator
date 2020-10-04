@@ -1,4 +1,4 @@
-![Flutter CI](https://github.com/freddiefujiwara/jpy_bills_coins_calculator/workflows/Flutter%20CI/badge.svg)
+[![Flutter CI](https://github.com/freddiefujiwara/jpy_bills_coins_calculator/workflows/Flutter%20CI/badge.svg)](https://github.com/freddiefujiwara/jpy_bills_coins_calculator/actions)
 # jpy_bills_coins_calculator
 
 japanese bills and coins calculator
