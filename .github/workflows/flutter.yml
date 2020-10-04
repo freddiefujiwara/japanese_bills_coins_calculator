@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v1
+      - name: Flutter setting
+        uses: subosito/flutter-action@v1
+        with:
+          channel: beta
       - name: "Install and Build  🔧"
         run: |
           flutter config --enable-web
