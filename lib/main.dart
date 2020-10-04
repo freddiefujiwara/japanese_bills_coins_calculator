@@ -36,14 +36,27 @@ class Calculator extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Text(
-                                "合計${formatter.format(model.sum())} 円",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 25,
-                                  color: Theme.of(context).primaryColor,
-                                ),
-                              ),
+                              Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(
+                                      "合計${formatter.format(model.sum())} 円",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 25,
+                                        color: Theme.of(context).primaryColor,
+                                      ),
+                                    ),
+                                    RaisedButton(
+                                      child: Text("クリア"),
+                                      color: Colors.white,
+                                      textColor: Colors.black,
+                                      onPressed: () {
+                                        model.clear();
+                                      },
+                                    ),
+                                  ]),
                               SizedBox(height: 15),
                               Row(
                                 mainAxisAlignment:
@@ -242,14 +255,6 @@ class Calculator extends StatelessWidget {
                                   ),
                                   Text("${model.get1()} 枚"),
                                 ],
-                              ),
-                              RaisedButton(
-                                child: Text("クリア"),
-                                color: Colors.white,
-                                textColor: Colors.black,
-                                onPressed: () {
-                                  model.clear();
-                                },
                               ),
                             ],
                           ),
