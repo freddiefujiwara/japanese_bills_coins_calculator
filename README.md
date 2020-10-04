@@ -6,4 +6,4 @@ japanese bills and coins calculator
 ![Demo](https://freddiefujiwara.com/jpy_bills_coins_calculator/ezgif.com-video-to-gif.gif)
 
 # Demo
-[TRY](https://freddiefujiwara.com/memory_game/#/)
+[TRY](https://freddiefujiwara.com/jpy_bills_coins_calculator/)
