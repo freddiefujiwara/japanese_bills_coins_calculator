@@ -64,8 +64,8 @@ class Calculator extends StatelessWidget {
                                 children: [
                                   RaisedButton(
                                     child: Text("10,000円"),
-                                    color: Colors.white30,
-                                    textColor: Colors.black,
+                                    color: Colors.grey,
+                                    textColor: Colors.white,
                                     onPressed: () {
                                       model.increment(Bill.tenThousands);
                                     },
@@ -79,8 +79,8 @@ class Calculator extends StatelessWidget {
                                 children: [
                                   RaisedButton(
                                     child: Text("5,000円"),
-                                    color: Colors.white30,
-                                    textColor: Colors.black,
+                                    color: Colors.grey,
+                                    textColor: Colors.white,
                                     onPressed: () {
                                       model.increment(Bill.fiveThousands);
                                     },
@@ -94,8 +94,8 @@ class Calculator extends StatelessWidget {
                                 children: [
                                   RaisedButton(
                                     child: Text("1,000円"),
-                                    color: Colors.white30,
-                                    textColor: Colors.black,
+                                    color: Colors.grey,
+                                    textColor: Colors.white,
                                     onPressed: () {
                                       model.increment(Bill.oneThousand);
                                     },
