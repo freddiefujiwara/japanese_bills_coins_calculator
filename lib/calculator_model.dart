@@ -1,93 +1,45 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 
+enum Bill {
+  one,
+  five,
+  ten,
+  fifty,
+  oneHundred,
+  fiveHundreds,
+  oneThousand,
+  fiveThousands,
+  tenThousands,
+}
+
 class CalculatorModel extends ChangeNotifier {
-  int _10000;
-  int _5000;
-  int _1000;
-  int _500;
-  int _100;
-  int _50;
-  int _10;
-  int _5;
-  int _1;
+  List<int> _bills = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   CalculatorModel() {
     this.clear();
   }
   void clear() {
-    this._10000 = 0;
-    this._5000 = 0;
-    this._1000 = 0;
-    this._500 = 0;
-    this._100 = 0;
-    this._50 = 0;
-    this._10 = 0;
-    this._5 = 0;
-    this._1 = 0;
+    Bill.values.forEach((b) => this._bills[b.index] = 0);
     notifyListeners();
   }
 
-  void increment10000() {
-    this._10000++;
+  void increment(Bill b) {
+    this._bills[b.index]++;
     notifyListeners();
   }
 
-  void increment5000() {
-    this._5000++;
-    notifyListeners();
+  int number(Bill b) {
+    return this._bills[b.index];
   }
 
-  void increment1000() {
-    this._1000++;
-    notifyListeners();
+  int sum() {
+    double sum = 0.0;
+    Bill.values.forEach((b) {
+      sum += b.index % 2 == 0
+          ? this._bills[b.index] * pow(10, b.index / 2)
+          : this._bills[b.index] * pow(10, (b.index + 1) / 2) / 2;
+    });
+    return sum.round();
   }
-
-  void increment500() {
-    this._500++;
-    notifyListeners();
-  }
-
-  void increment100() {
-    this._100++;
-    notifyListeners();
-  }
-
-  void increment50() {
-    this._50++;
-    notifyListeners();
-  }
-
-  void increment10() {
-    this._10++;
-    notifyListeners();
-  }
-
-  void increment5() {
-    this._5++;
-    notifyListeners();
-  }
-
-  void increment1() {
-    this._1++;
-    notifyListeners();
-  }
-
-  int get10000() => this._10000;
-  int get5000() => this._5000;
-  int get1000() => this._1000;
-  int get500() => this._500;
-  int get100() => this._100;
-  int get50() => this._50;
-  int get10() => this._10;
-  int get5() => this._5;
-  int get1() => this._1;
-  int sum() =>
-      this._10000 * 10000 +
-      this._5000 * 5000 +
-      this._1000 * 1000 +
-      this._500 * 500 +
-      this._100 * 100 +
-      this._50 * 50 +
-      this._10 * 10 +
-      this._5 * 5 +
-      this._1;
 }

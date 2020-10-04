@@ -67,10 +67,10 @@ class Calculator extends StatelessWidget {
                                     color: Colors.white30,
                                     textColor: Colors.black,
                                     onPressed: () {
-                                      model.increment10000();
+                                      model.increment(Bill.tenThousands);
                                     },
                                   ),
-                                  Text("${model.get10000()} 枚"),
+                                  Text("${model.number(Bill.tenThousands)} 枚"),
                                 ],
                               ),
                               Row(
@@ -82,10 +82,10 @@ class Calculator extends StatelessWidget {
                                     color: Colors.white30,
                                     textColor: Colors.black,
                                     onPressed: () {
-                                      model.increment5000();
+                                      model.increment(Bill.fiveThousands);
                                     },
                                   ),
-                                  Text("${model.get5000()} 枚"),
+                                  Text("${model.number(Bill.fiveThousands)} 枚"),
                                 ],
                               ),
                               Row(
@@ -97,10 +97,10 @@ class Calculator extends StatelessWidget {
                                     color: Colors.white30,
                                     textColor: Colors.black,
                                     onPressed: () {
-                                      model.increment1000();
+                                      model.increment(Bill.oneThousand);
                                     },
                                   ),
-                                  Text("${model.get1000()} 枚"),
+                                  Text("${model.number(Bill.oneThousand)} 枚"),
                                 ],
                               ),
                               Row(
@@ -122,11 +122,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment500();
+                                        model.increment(Bill.fiveHundreds);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get500()} 枚"),
+                                  Text("${model.number(Bill.fiveHundreds)} 枚"),
                                 ],
                               ),
                               Row(
@@ -148,11 +148,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment100();
+                                        model.increment(Bill.oneHundred);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get100()} 枚"),
+                                  Text("${model.number(Bill.oneHundred)} 枚"),
                                 ],
                               ),
                               Row(
@@ -174,11 +174,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment50();
+                                        model.increment(Bill.fifty);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get50()} 枚"),
+                                  Text("${model.number(Bill.fifty)} 枚"),
                                 ],
                               ),
                               Row(
@@ -199,11 +199,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment10();
+                                        model.increment(Bill.ten);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get10()} 枚"),
+                                  Text("${model.number(Bill.ten)} 枚"),
                                 ],
                               ),
                               Row(
@@ -224,11 +224,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment5();
+                                        model.increment(Bill.five);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get5()} 枚"),
+                                  Text("${model.number(Bill.five)} 枚"),
                                 ],
                               ),
                               Row(
@@ -249,11 +249,11 @@ class Calculator extends StatelessWidget {
                                         ),
                                       ),
                                       onPressed: () {
-                                        model.increment1();
+                                        model.increment(Bill.one);
                                       },
                                     ),
                                   ),
-                                  Text("${model.get1()} 枚"),
+                                  Text("${model.number(Bill.one)} 枚"),
                                 ],
                               ),
                             ],
